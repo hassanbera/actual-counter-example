@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <h1>Parent Component</h1>
+    <p>Bu bileşen sayaç değerini yönetiyor ve child bileşene iletiyor.</p>
+<!-- Child bileşen ve değer aktarımı-->
+
+<app-child
+  [counter]="counterValue"
+  (increment)="incrementCounter()"
+  (decrement)="decrementCounter()"
+></app-child>
+
+
+</div>
